@@ -1,0 +1,25 @@
+@use "../util" as u;
+@use "../globals";
+
+.fw-feature {
+  //@extend %fullwidth;
+  background-color: var(--full-width-bg);
+
+  &__wrapper {
+    //@extend %fullwidth-wrapper;
+  }
+
+  &__title {
+  }
+
+  &__description {
+    max-width: 70ch;
+    margin-inline: auto;
+    margin-block-end: u.rem(40);
+  }
+
+  &__image {
+    max-width: u.rem(792);
+    margin-inline: auto;
+  }
+}
